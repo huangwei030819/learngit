@@ -1,0 +1,906 @@
+@baseColor:#2F6ED0;
+@baseSizeTint:#999;
+
+//内容部分
+.inputField {
+  width:100%;
+  height: 35px;
+  .inputBox {
+    width: 75%;
+    height: 35px;
+    background-color: #E9E9E9;
+    .search {
+      display: inline-block;
+      width: 25px;
+      padding:0 0 5px 5px;
+    }
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    input {
+      height: 30px;
+      width: 60%;
+      background-color: #E9E9E9;
+      margin-top: 2px;
+    }
+    .searchFR {
+      padding: 4.5px 5px ;
+    }
+  }
+  .seek {
+    width: 25%;
+    height: 35px;
+    background-color: #000;
+    line-height: 35px;
+    text-align: center;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+//地名分类
+.toponymy {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  border-bottom: 1px solid #C3C3C3;
+  line-height: 40px;
+}
+.toponymyTab {
+  width: 100%;
+  height: 100%;
+  ul {
+    width: 100%;
+    span {
+      display: inline-block;
+      height: 40px;
+      width:20px;
+      float: left;
+      margin-right: 3px;
+      padding-top: 8px;
+      img {
+        display: block;
+        width: 100%;
+        height: 65%;
+
+      }
+    }
+
+    li {
+      float: left;
+    }
+  }
+}
+.showToponymy {
+  width: 100%;
+  height: 120px;
+  margin-top: 5px;
+  border-bottom: 1px solid #C3C3C3;
+
+  .showToponymyul {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    margin-top: 10px;
+    li {
+      height: 30px;
+      float: left;
+      cursor: pointer;
+      text-align: center;
+      padding:0 5px;
+      font-size: 12px;
+      a{
+        border-bottom: 1px solid @baseColor;
+        color: @baseColor;
+      }
+    }
+  }
+  .showToponymyultab {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    ul {
+      display: inline-block;
+      overflow: auto;
+      li {
+        float: left;
+        width: 10px;
+        height: 5px;
+        border-radius: 3px;
+        margin:0 5px;
+        background-color: #DBD8D8;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//特色推荐
+.recommend {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #F7F7F7;
+  border-radius: 6px;
+  margin-top: 40px;
+  color: #595A5A;
+}
+.recommendLeft {
+  width: 20%;
+  height: 100%;
+  background-color: #EFEFF0;
+  ul {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px ;
+    overflow: hidden;
+    li {
+      width: 100%;
+      border-radius: 6px ;
+      height: 16.66%;
+      text-align: center;
+      padding-top: 30px;
+      .recommendBgc {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin:0 auto;
+      }
+      .book {
+        background:url("../images/book.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+      .financial {
+        background:url("../images/financial.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+      .tour {
+        background:url("../images/tour.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+      .medical {
+        background:url("../images/medical.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+      .education {
+        background:url("../images/education.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+      .government {
+        background:url("../images/government.png")  no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  //  li:first-child {
+  //    border-radius: 6px 0 0 0 ;
+  //  }
+  //li:last-child{
+  //  border-radius: 0 0 0 6px ;
+  //}
+  }
+}
+.recommendRight {
+  width: 80%;
+  .particulars {
+    width: 100%;
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+    background: #EDEEEE;
+    cursor: pointer;
+    .dataBox {
+      height: 35px;
+      padding:0 15px;
+    .particularsLeft {
+      font-weight: 700;
+    }
+    .particularsRight {
+      display: inline-block;
+      width: 28px;
+      height: 17.5px;
+      border-radius: 6px;
+      background-color: @baseColor;
+      margin-top: 9px;
+      position: relative;
+      i {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top:-8.5px;
+        color: #fff;
+      }
+    }
+      .dataW {
+        background-color: #fff;
+        i {
+          color: @baseColor;
+        }
+      }
+
+    }
+  }
+  .particularsClick {
+    background-color: @baseColor;
+    color: #fff;
+  }
+  .particulars:first-child{
+    border-radius:0 6px  0 0 ;
+  }
+}
+
+//展开
+
+.unfold {
+  width: 100%;
+  height: 35px;
+  padding:0 25px;
+  background-color: #fff;
+  color: @baseSizeTint;
+  border-bottom: 1px solid #EEEEEE;
+  overflow: hidden;
+  font-size: 12px;
+  .unfoldRight {
+    display: inline-block;
+    width: 28px;
+    height: 17.5px;
+    border-radius: 6px;
+    background-color: #F3F2F2;
+    margin-top: 9px;
+    position: relative;
+    text-align: center;
+    i {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top:-8.5px;
+      color: @baseSizeTint;
+    }
+  }
+}
+.unfold:last-child{
+  border: 0;
+}
+//地图部分
+.detailsRgiht {
+  width: 75.5%;
+  padding: 20px 60px 0 0 ;
+}
+.detailsLeft {
+  padding: 20px 60px 0 60px ;
+
+}
+
+.ulLeftTextCol {
+  color: @baseColor;
+}
+.weather {
+  height: 50px;
+  display:table-cell;
+  vertical-align:bottom;
+  .weathermap {
+    height: 40%;
+    vertical-align: middle;
+    margin-bottom: 6px;
+  }
+  .degree {
+    color: @baseColor;
+    font-weight: 700;
+    font-size: 21px;
+  }
+}
+.recently {
+  height: 50px;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 2.4px 0 0 30px ;
+  ul {
+
+    li {
+      float: left;
+      i {
+        float: left;
+        padding:0 10px;
+        color: #999;
+      }
+      a {
+        color: #666;
+      }
+      a:hover{
+        color: @baseColor;
+      }
+    }
+  }
+}
+.select {
+  height: 50px;
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: right;
+  padding: 10px 0 0 0 ;
+  position: relative;
+
+  .selectText {
+    select {
+      width: 80px;
+      height: 30px;
+    }
+    .mapClick {
+      width: 60px;
+      height: 30px;
+      border: 1px solid #AAAAAA;
+      text-align: center;
+      line-height: 28px;
+      margin:10px 0 0 20px ;
+      cursor: pointer;
+        .mapImg {
+          height: 60%;
+        }
+    }
+  }
+}
+.detailsRgihtTop {
+  height: 50px;
+  line-height: 50px;
+  //margin-bottom: 10px;
+}
+#map{
+  width: 100%;
+  height: 727px;
+}
+//地图点开
+.selectMap {
+  width: 370px;
+  z-index:999999;
+  border: 1px solid #C8C8C8;
+  position: absolute;
+  right: 0;
+  top: 49px;
+  background-color: #fff;
+  padding:0 5px;
+  opacity: .8;
+  .selectTop {
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid @baseColor;
+    cursor: move;
+    .fa {
+      color: @baseColor;
+      cursor: pointer;
+    }
+    .colorRed {
+      color: #cd2c3c;
+    }
+    em {
+      font-weight: 700;
+    }
+  }
+  .selectLi {
+    margin-top: 10px;
+    .Place {
+      width:100%;
+      text-align: center;
+      height: 30px;
+      position: relative;
+      .BottomShow {
+        display: inline-block;
+        height: 100%;
+        width: 180px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid @baseColor;
+        cursor: pointer;
+        .fa-chevron-down {
+          padding: 7px 5px 0 0;
+          color: @baseColor;
+        }
+      }
+      .selectUl {
+        width: 370px;
+        height: 210px;
+        background-color: #F3F3F3;
+        position: absolute;
+        left: -5px;
+        top: 40px;
+        z-index: 999;
+        li {
+          font-size: 12px;
+          color: #666;
+          float: left;
+          width: 30%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer;
+          margin:0 1.5%;
+        }
+        li:hover{
+          color: #fff;
+          background-color: #146CFC;
+        }
+      }
+
+    }
+    .inquire {
+      width: 95%;
+      height: 100px;
+      border: 1px solid @baseColor;
+      margin: 10px 2.5%;
+      .inquireTop {
+        text-align: left;
+        height: 30px;
+        line-height: 30px;
+        border-bottom:1px solid @baseColor;
+        padding-left: 10px;
+        .fa-compass {
+          color: @baseColor;
+        }
+      }
+      .attribute {
+        margin-top: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        .attributeInput {
+          .inputData {
+            padding-left: 3px;
+            border: 1px solid @baseColor;
+            height: 100%;
+          }
+          em {
+            width: 70px;
+            height: 30px;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            vertical-align: bottom;
+            .buinput {
+              width: 100%;
+              height: 100%;
+              background-color: @baseColor;
+            }
+            .imgpos {
+              position: absolute;
+              top: 7px;
+              left: 28px;
+              color: #fff;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+.selectMapClick {
+  width: 370px;
+  z-index:999999;
+  border: 1px solid #C8C8C8;
+  position: absolute;
+  left: -210px;
+  top: 255px;
+  background-color: #fff;
+  padding:0 5px;
+  opacity: .8;
+  .selectTop {
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid @baseColor;
+    cursor: move;
+    .fa {
+      color: @baseColor;
+      cursor: pointer;
+    }
+    .colorRed {
+      color: #cd2c3c;
+    }
+    em {
+      font-weight: 700;
+    }
+  }
+  .resultBox {
+    width: 100%;
+    .resulT {
+      span{
+        font-size: 12px;
+        color: @baseSizeTint;
+        em {
+          color: @baseColor;
+        }
+      }
+    }
+    .resulUl{
+      ul {
+        li {
+          text-align: left;
+          border-bottom:1px solid @baseColor;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 10px;
+          a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: @baseColor;
+          }
+          a:hover{
+            color: #3988FF;
+          }
+        }
+      }
+      .paging {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+//.selectMap {
+//  width: 230px;
+//  height: 180px;
+//  z-index:999999;
+//  border: 1px solid #C8C8C8;
+//  position: absolute;
+//  right: 0;
+//  top: 57px;
+//  overflow-y:auto;
+//  background-color: #fff;
+//  .selectTop {
+//    width: 100%;
+//    height: 20px;
+//    line-height: 20px;
+//    background-color: #F5F5F5;
+//    p {
+//      text-align: left;
+//      padding-left: 5px;
+//      font-size: 12px;
+//    }
+//  }
+//  .selectLi{
+//      ul {
+//        width: 100%;
+//        height: 100%;
+//        padding:8px 10px;
+//        li {
+//          width: 33.33%;
+//          float: left;
+//          text-align: center;
+//          .imgBox {
+//            height: 50px;
+//            img {
+//              display: block;
+//              width: 50px;
+//              height: 50px;
+//              cursor: pointer;
+//              border: 1px solid #999;
+//            }
+//            .imgborder {
+//              border: 2px solid #FF4800;
+//
+//            }
+//          }
+//          .fBox {
+//            cursor: default;
+//            font-size: 12px;
+//              input {
+//                vertical-align: middle;
+//                margin-bottom: 5px;
+//              }
+//          }
+//
+//        }
+//      }
+//  }
+//}
+
+//经济合作
+.economic {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  border-top:1px solid #c8c8c8;
+  .sort {
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    line-height: 28px;
+    text-align: center;
+    border:1px solid #c8c8c8;
+    border-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+     .ioc {
+      display: inline-block;
+      width: 7px;
+      margin-left: 5px;
+      vertical-align: top;
+      .iocT,.iocB{
+        float: left;
+        display: inline-block;
+        width: 7px;
+        color: #999999;
+      }
+       .iocT {
+         height: 4px;
+         margin-top: 7px;
+         background-position: -10px -100px;
+       }
+       .iocB {
+         height: 4px;
+         margin-top: -2px;
+         background-position: -10px -110px;
+       }
+    }
+  }
+  .economicTop {
+    width: 100%;
+    margin-top: 10px;
+    .return {
+      width: 70px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      font-size: 12px;
+      border:1px solid #c8c8c8;
+      background-color: #EFEFF0;
+      border-radius: 6px;
+      img {
+        height: 80%;
+        vertical-align: middle;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}
+.economicBottom {
+  width: 100%;
+  min-height: 550px;
+  .journalism {
+    width: 100%;
+    height: 100%;
+    ul {
+      li {
+        height: 60px;
+        border-bottom: 1px dashed #c8c8c8;
+        margin-top: 5px;
+        cursor: pointer;
+        .serial {
+          width: 5%;
+          display: block;
+          height: 60px;
+          line-height: 60px;
+          font-style: italic;
+          color: #C9C9C9;
+          font-size: 18px;
+        }
+        .serialText {
+          width: 80%;
+          padding-top: 10px;
+          p {
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          .serialTextdescribe {
+            font-size: 12px;
+            color: #999;
+          }
+        }
+        .serialTime {
+          width: 15%;
+          text-align: right;
+          line-height: 60px;
+          color: #999;
+
+        }
+      }
+    }
+  }
+}
+//分页
+.paging {
+  text-align: center;
+}
+//经济合作明细
+.economicParticulars {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  border-top:1px solid #c8c8c8;
+  overflow-y:auto;
+  .particularsTop {
+    width: 100%;
+    margin-top: 10px;
+    .particularsreturn {
+      width: 70px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      font-size: 12px;
+      border:1px solid #c8c8c8;
+      background-color: #EFEFF0;
+      border-radius: 6px;
+      img {
+        height: 80%;
+        vertical-align: middle;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}
+.particularsBottom {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  .particularsTopW {
+    height: 80px;
+    border-bottom: 1px dashed #c8c8c8;
+    h3 {
+      padding: 10px 0;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    p {
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .particularsBottomW {
+    padding:10px 10px 0;
+    color: #676767;
+    p{
+      text-align: left;
+      padding:10px 0;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+//登录模态框
+.custom {
+    margin-top: 250px;
+    width: 360px;
+  .modal-content {
+    border-radius: 5px;
+    .modal-header {
+
+      .modal-title {
+        color: #000;
+      }
+    }
+
+    .modal-body {
+      padding-top: 0;
+      #cForm{
+        text-align: center;
+        li {
+          padding-bottom: 30px;
+          input {
+            width: 90%;
+            height: 38px;
+            padding-left: 10px;
+            border-radius: 6px;
+            border: 1px solid #c8c8c8;
+            background-color: #F4F4F4;
+          }
+        }
+
+        .submit {
+          width: 90%;
+          height: 44px;
+          border: none;
+          background-color: @baseColor;
+          color: white;
+        }
+      }
+      //表单底部
+      .botB {
+        margin-top: 10px;
+        height: 44px;
+        .fg{
+          float: left;
+          padding-left:5%;
+          label {
+            color: #333;
+            font-weight: 400;
+          }
+        }
+        .zh {
+          float: right;
+          padding-right:5%;
+          a{
+            color: @baseColor;
+          }
+        }
+      }
+    }
+  }
+}
+//注册模态框
+#DForm,#GForm {
+    text-align: center;
+  li {
+    padding-bottom: 20px;
+    input {
+      width: 90%;
+      height: 38px;
+      padding-left: 10px;
+      border-radius: 6px;
+      border: 1px solid #c8c8c8;
+      background-color: #F4F4F4;
+    }
+  }
+
+
+  .submitZ {
+    width: 90%;
+    height: 44px;
+    border: none;
+    background-color: @baseColor;
+    color: white;
+  }
+  .dl {
+
+    span {
+      float: right;
+      padding-right: 20px;
+      color: #999;
+      a {
+        color: @baseColor;
+      }
+    }
+  }
+  //性别职务
+  .genderInput {
+    .gender {
+      width: 30%;
+      height: 38px;
+      padding-left: 10px;
+      border-radius: 6px;
+      border: 1px solid #c8c8c8;
+      background-color: #F4F4F4;
+    }
+    .duty {
+      width: 60%;
+    }
+  }
+  //验证码
+  .acquireCode {
+    .code {
+      width: 60%;
+    }
+    .acquire {
+      display: inline-block;
+      width: 30%;
+      height: 38px;
+      border-radius: 6px;
+      border: 1px solid #c8c8c8;
+      vertical-align: bottom;
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding-left: 0;
+        font-size: 12px;
+        background-color: @baseColor;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//分页
+.paging {
+  width: 100%;
+  text-align: right;
+}
